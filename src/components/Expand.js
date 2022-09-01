@@ -7,14 +7,15 @@ const Expand = () => {
     const btn = document.getElementsByTagName('button')
 
     const goBig = () => {
+        setExpand(!expand)
+        setExpand2(false)
 
         if(!expand){
             btn[0].innerHTML = '-'
         }else{
             btn[0].innerHTML = '+'
         }
-        setExpand(!expand)
-        setExpand2(false)
+        
         btn[1].innerHTML = '+'
     }
 
